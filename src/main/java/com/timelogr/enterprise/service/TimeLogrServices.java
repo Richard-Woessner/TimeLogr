@@ -1,14 +1,13 @@
-package com.timelogr.enterprise;
+package com.timelogr.enterprise.service;
 
+import com.timelogr.enterprise.dto.employee;
 import org.springframework.stereotype.Service;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class TimeLogrServices {
+public class TimeLogrServices implements ITimeLogr {
     //TESTING DUMMY DATA#######################################
     public static List<employee> employeeList = new ArrayList<>();
     static{
